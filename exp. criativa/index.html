@@ -3,104 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Portfólio Web Designer</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio Dev</title>
 </head>
-
 <body>
-    <header class="header" id="header">
+    <header class="header">
         <nav class="nav container">
-            <a href="#" class="nav_logo">Seu Nome</a>
-            
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list">
-                    <li><a href="#home" class="nav_link">Home</a></li>
-                    <li><a href="#about" class="nav_link">Sobre</a></li>
-                    <li><a href="#projects" class="nav_link">Projetos</a></li>
-                    <li><a href="#resume" class="nav_link">Resumo</a></li>
-                    <li><a href="#contact" class="nav_link">Contato</a></li>
-                </ul>
-                
-                <div class="nav_close" id="nav-close">
-                    <i class="ri-close-large-line"></i>
-                </div>
-            </div>
-            
-            <div class="nav_toggle" id="nav-toggle">
-                <i class="ri-menu-line"></i>
-            </div>
+            <a href="#home" class="nav_logo">Seu Nome</a>
+            <ul class="nav_list">
+                <li><a href="#home" class="nav_link">Home</a></li>
+                <li><a href="#about" class="nav_link">About</a></li>
+                <li><a href="#projects" class="nav_link">Projects</a></li>
+                <li><a href="#resume" class="nav_link">Resume</a></li>
+                <li><a href="#contact" class="nav_link">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main class="main">
-        <!--HOME-->
-        <section class="home section" id="home">
-            <div class="home_container container grid">
-                <div class="home_content">
-                    <div class="home_data">
-                        <h1 class="home_title">Olá, eu sou <span class="gradient-text">Seu Nome</span></h1>
-                        <h3 class="home_subtitle">Desenvolvedor Front-End apaixonado por tecnologia.</h3>
-                        <p class="home_description">
-                            Criando experiências digitais incríveis com HTML, CSS, JavaScript e mais.
-                        </p>
-                        <a href="#projects" class="button">Ver Projetos</a>
-                    </div>
-                </div>
-                
+    <main>
+        <!-- HOME -->
+        <section class="home" id="home">
+            <div class="home_container container">
                 <div class="home_image">
-                    <div class="home_blob">
-                        <img src="assets/img/perfil.png" alt="Foto de perfil" class="home_img">
+                    <div class="circle"></div>
+                    <img src="assets/img/perfil.png" alt="Foto de perfil" class="home_img">
+                </div>
+
+                <div class="home_content">
+                    <p class="home_intro">Hi, I'm a <span>Web Developer</span></p>
+                    <h1 class="home_title">Seu Nome</h1>
+                    <p class="home_description">
+                        Desenvolvedor focado em criar sites modernos e funcionais.
+                    </p>
+                    <div class="home_buttons">
+                        <a href="#" class="button">Download CV</a>
+                        <a href="#projects" class="button button_ghost">Projects</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- sobre -->
+        <!-- SOBRE -->
         <section class="about section" id="about">
-            <h2 class="section_title">Sobre Mim</h2>
-            <div class="about_container container grid">
+            <div class="about_container container">
+                <div class="about_content">
+                    <h2 class="section_title">Sobre Mim</h2>
+                    <p>
+                        Desenvolvedor apaixonado por interfaces modernas, performance e design. 
+                        Sempre buscando as melhores práticas e as tecnologias mais atuais.
+                    </p>
+                    <a href="#contact" class="button button_ghost">Contact Me</a>
+                </div>
+                <div class="about_image">
+                    <img src="assets/img/perfil.png" alt="Foto profissional">
+                </div>
             </div>
         </section>
 
-        <!--projetos-->
+        <!-- HABILIDADES -->
+        <section class="skills section" id="skills">
+            <h2 class="section_title">Habilidades</h2>
+
+            <div class="skills_container container">
+                <div class="skills_content">
+
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">React</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">GitHub</span>
+                    <span class="skill">Figma</span>
+                    <span class="skill">Next.js</span>
+                    <span class="skill">Laravel</span>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
         <section class="projects section" id="projects">
-            <h2 class="section_title">Projetos</h2>
-            <div class="projects_container container grid">
-                <!-- Projetos aqui -->
+            <div class="container">
+                <h2 class="section_title">Projetos</h2>
+                <div class="projects_container">
+                    <div class="project_card">
+                        <img src="assets/img/p1.jpg" alt="Projeto 1">
+                    </div>
+                    <div class="project_card">
+                        <img src="assets/img/p2.jpg" alt="Projeto 2">
+                    </div>
+                    <div class="project_card">
+                        <img src="assets/img/p3.jpg" alt="Projeto 3">
+                    </div>
+                    <div class="project_card">
+                        <img src="assets/img/p4.jpg" alt="Projeto 4">
+                    </div>
+                    <div class="project_card">
+                        <img src="assets/img/p5.jpg" alt="Projeto 5">
+                    </div>
+                    <div class="project_card">
+                        <img src="assets/img/p6.jpg" alt="Projeto 6">
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!--resumo-->
+        <!-- CONTATO -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section_title">Contato</h2>
+                <div class="contact_container">
+                    
+                </div>
+            </div>
+        </section>
+
         <section class="resume section" id="resume">
-            <h2 class="section_title">Resumo</h2>
-            <div class="resume_container container">
-                <!-- Resumo aqui -->
-            </div>
-        </section>
+    <h2 class="section_title">Qualificações</h2>
 
-        <!--conato-->
-        <section class="contact section" id="contact">
-            <h2 class="section_title">Contato</h2>
-            <div class="contact_container container grid">
-                <!-- Formulário de contato aqui -->
+    <div class="resume_container container">
+
+        <!-- EXPERIENCIA -->
+        <div class="resume_column">
+            <h3 class="resume_subtitle">
+                <i class="ri-briefcase-line"></i> Experiência
+            </h3>
+
+            <div class="resume_item">
+                
             </div>
-        </section>
+
+            <div class="resume_item">
+                
+            </div>
+
+            <div class="resume_item">
+                
+
+            </div>
+        </div>
+
+        <!--FORMAÇÃO-->
+        <div class="resume_column">
+            <h3 class="resume_subtitle">
+                <i class="ri-graduation-cap-line"></i> Formação
+            </h3>
+
+            <div class="resume_item">
+
+            </div>
+
+            <div class="resume_item">
+
+            </div>
+
+            <div class="resume_item">
+
+            </div>
+        </div>
+
+    </div>
+</section>
     </main>
 
-    <!--rodapé-->
     <footer class="footer">
-        <div class="footer_container container">
-            <p>© 2026 Seu Nome - Todos os direitos reservados.</p>
-        </div>
+        
     </footer>
-    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
